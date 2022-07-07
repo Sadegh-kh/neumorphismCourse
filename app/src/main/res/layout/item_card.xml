@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soup.neumorphism.NeumorphCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    app:neumorph_backgroundColor="?attr/colorPrimary"
+    app:neumorph_shadowColorDark="@color/new_shadow1"
+    app:neumorph_shadowColorLight="@color/new_shadow2"
+    app:neumorph_shadowElevation="4dp"
+    app:neumorph_shapeAppearance="@style/NeuCard"
+    app:neumorph_shapeType="basin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_selected" />
+
+        <TextView
+            android:id="@+id/txt_sub_climate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="16dp"
+            android:text="sleeping mode"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_engine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Engine"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_sub_climate"
+            app:layout_constraintStart_toStartOf="@+id/txt_sub_climate" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</soup.neumorphism.NeumorphCardView>
